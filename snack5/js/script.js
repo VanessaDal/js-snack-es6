@@ -11,11 +11,13 @@ var arrayObj = [
 
   document.getElementById("first").innerHTML="test primo array: " + arrayObj[0].name +" " + arrayObj[0].type +" " + arrayObj[0].color + " " + arrayObj[0].position
 
-  var newArray=[];
+  var newArray=[...arrayObj];
 
-  for (i = 0; i < arrayObj.length; i++) {
-    newArray.push(arrayObj[i]);
-  }
+  // for (i = 0; i < arrayObj.length; i++) {
+  //   newArray.push(arrayObj[i]);
+  // }
+
+  
   console.log(newArray)
 
 function generateRandomLetter() {
